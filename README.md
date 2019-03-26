@@ -19,6 +19,7 @@
 配置`vscode`下的`springboot`开发环境：
 
 - 第一步，安装 vscode 插件依赖：
+  
   - Java Extension Pack
   - Maven for Java
   - Spring Boot Extension Pack
@@ -35,7 +36,9 @@ spring.datasource.username=root
 spring.datasource.password=你的database密码
 ```
 
-- 第三步，等待 vscode 自己下载好相关依赖 jar，用力按下`F5`，启动
+- 第三步，进入调试`ctrl+shift+f5`，点击`没有配置>添加配置`，等待 vscode 自己下载好相关依赖 jar
+
+- 第四步，按下`F5`，启动`springboot`
 
 #### Vue
 
@@ -53,8 +56,10 @@ yarn serve
 ## Q&A
 
 - 如果使用`SSR`渲染，控制层注解使用`@Controller`
--
+
 - 如果使用`vue`前后端分离，控制层注解使用`@RestController`
+
+- 如`Java`接口接受不到参数值，请百度查询`lombok`实体类注解是否存在错误
 
 ## Demo 数据库建表语句
 

@@ -24,6 +24,7 @@ public class UserController {
   private UserService userService;
 
   @RequestMapping("/test")
+  // @ResponseBody
   public String test() {
     List<User> userList = new ArrayList<>();
     try {
