@@ -19,12 +19,38 @@
 配置`vscode`下的`springboot`开发环境：
 
 - 第一步，安装 vscode 插件依赖：
-  
+
   - Java Extension Pack
   - Maven for Java
   - Spring Boot Extension Pack
 
 > 建议下载`maven`配置阿里仓库，不然下载依赖包会很慢
+
+配置`setting.json`，增加如下配置
+
+```json
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "editor.suggestSelection": "first",
+  // 自动 override
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  // jdk 安裝路径
+  "java.home": "C:/Program Files/Java/jdk1.8.0_201",
+  // maven - mvn 路径
+  "maven.executable.path": "D:/apache-maven-3.6.0/bin/mvn",
+  // maven 配置 推荐阿里仓库
+  "java.configuration.maven.userSettings": "D:/apache-maven-3.6.0/conf/settings.xml",
+  "maven.terminal.customEnv": [
+    {
+      "environmentVariable": "JAVA_HOME",
+      "value": "C:/Program Files/Java/jdk1.8.0_201"
+    }
+  ],
+```
 
 - 第二步，修改 `MySQL` 数据库配置
 
