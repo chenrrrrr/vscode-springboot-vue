@@ -23,7 +23,7 @@
   - Java Extension Pack
   - Maven for Java
   - Spring Boot Extension Pack
-  - lombok环境，否则你后台打死接不到前台传参的，[下载地址](https://mvnrepository.com/artifact/org.projectlombok/lombok/1.16.20)
+  - Lombok Annotations Support for VS Code(lombok 环境，否则你后台打死接不到前台传参的)
 
 > 建议下载`maven`配置阿里仓库，不然下载依赖包会很慢
 
