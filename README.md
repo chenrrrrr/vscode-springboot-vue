@@ -58,7 +58,7 @@
 `application.properties`
 
 ```xml
-spring.datasource.url=jdbc:mysql://127.0.0.1:3306/你的database名
+spring.datasource.url=jdbc:mysql://127.0.0.1:3306/你的database名?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
 spring.datasource.username=root
 spring.datasource.password=你的database密码
 ```
@@ -82,11 +82,7 @@ yarn serve
 
 ## Q&A
 
-- 如果使用`SSR`渲染，控制层注解使用`@Controller`
-
-- 如果使用`vue`前后端分离，控制层注解使用`@RestController`
-
-- 如`Java`接口接受不到参数值，请百度查询`lombok`实体类注解是否存在错误
+- 如控制层注解使用`@RestController`，`Java`接口接受不到参数值，请百度查询`lombok`实体类注解是否存在错误以及入参是不是没加`@RequestBody`
 
 ## Demo 数据库建表语句
 
